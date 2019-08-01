@@ -62,7 +62,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	$route['set_waiting/cuti/(:any)'] = 'CutiController/waiting/$1';
 
 
-	$route['default_controller'] = 'AuthController/index';
+	$route['default_controller'] = 'Welcome';
 	$route['404_override'] = '';
 	$route['translate_uri_dashes'] = FALSE;
 
