@@ -60,11 +60,8 @@
 
                     <!-- Brand logo -->
                     <span class="dt-brand__logo">
-        <a class="dt-brand__logo-link" href="index.html">
-          <img class="dt-brand__logo-img d-none d-sm-inline-block" src="<?= base_url() ?>assets/backend/images/logo.png"
-               alt="Drift">
-          <img class="dt-brand__logo-symbol d-sm-none" src="<?= base_url() ?>assets/backend/images/logo-symbol.png"
-               alt="Drift">
+        <a class="dt-brand__logo-link justify-content-center" href="<?=base_url('admin')?>">
+          <i class="fa fa-balance-scale fa-2x"></i> <span style="font-size: 16px">CV. Neraca</span>
         </a>
       </span>
                     <!-- /brand logo -->
@@ -186,9 +183,7 @@
                                 <!-- Dropdown Link -->
                                 <a href="#" class="dt-nav__link dropdown-toggle no-arrow dt-avatar-wrapper"
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <img class="dt-avatar size-30"
-                                         src="<?= base_url() ?>uploads/<?= $this->session->userdata('session_foto') ?>"
-                                         alt="Domnic Harris">
+                                    <i class="fa fa-user-circle-o"></i>
                                     <span class="dt-avatar-info d-none d-sm-block">
                 <span class="dt-avatar-name"><?= $this->session->userdata('session_nama') ?></span>
               </span> </a>
@@ -197,9 +192,7 @@
                                 <!-- Dropdown Option -->
                                 <div class="dropdown-menu dropdown-menu-right">
                                     <div class="dt-avatar-wrapper flex-nowrap p-6 mt--5 bg-gradient-purple text-white rounded-top">
-                                        <img class="dt-avatar"
-                                             src="<?= base_url() ?>uploads/<?= $this->session->userdata('session_foto') ?>"
-                                             alt="Domnic Harris">
+                                        <i class="fa fa-user-circle-o"></i>
                                         <span class="dt-avatar-info">
                   <span class="dt-avatar-name"><?= $this->session->userdata('session_nama') ?></span>
                   <span class="f-12"><?= $this->session->userdata('session_level') ?></span>
@@ -249,66 +242,26 @@
                         <!-- Menu Item -->
 
                         <li class="dt-side-nav__item">
-                            <a href="<?= base_url() ?>dashboard" class="dt-side-nav__link" title="Dashboard"> <i
+                            <a href="<?= base_url() ?>admin" class="dt-side-nav__link" title="Dashboard"> <i
                                         class="icon icon-home icon-fw icon-lg"></i> <span class="dt-side-nav__text">Dashboard</span>
                             </a>
                         </li>
                         <li class="dt-side-nav__item dt-side-nav__header">
                             <span class="dt-side-nav__text">Data</span>
                         </li>
-                        <?php if ($this->session->userdata('session_level') == 'pegawai'): ?>
-                            <li class="dt-side-nav__item">
-                                <a href="<?= base_url() ?>pegawai/detail/<?= $this->session->userdata('session_id') ?>"
-                                   class="dt-side-nav__link" title="Pegawai"> <i class="fa fa-user icon-fw icon-lg"></i>
-                                    <span class="dt-side-nav__text">Profil</span> </a>
-                            </li>
-                            <li class="dt-side-nav__item">
-                                <a href="<?= base_url() ?>biodata/<?= $this->session->userdata('session_id') ?>"
-                                   class="dt-side-nav__link" title="Pegawai"> <i
-                                            class="fa fa-id-card-o icon-fw icon-lg"></i>
-                                    <span class="dt-side-nav__text">Laporan Biodata</span> </a>
-                            </li>
-
-                        <?php endif ?>
-
-                        <?php if ($this->session->userdata('session_level') == 'admin'): ?>
-
-
-                            <li class="dt-side-nav__item">
-                                <a href="<?= base_url() ?>list_biodata" class="dt-side-nav__link" title="Pegawai"> <i
-                                            class="fa fa-id-card-o icon-fw icon-lg"></i>
-                                    <span class="dt-side-nav__text">Laporan Biodata</span> </a>
-                            </li>
-
-                        <?php endif ?>
-
-                        <?php if ($this->session->userdata('session_level') != 'pegawai'): ?>
-
-                            <li class="dt-side-nav__item">
-                                <a href="<?= base_url() ?>pegawai" class="dt-side-nav__link" title="Pegawai"> <i
-                                            class="icon icon-group icon-fw icon-lg"></i>
-                                    <span class="dt-side-nav__text">Data Pegawai</span> </a>
-                            </li>
-                            <?php if ($this->session->userdata('session_level') == 'admin'): ?>
-                                <li class="dt-side-nav__item">
-                                    <a href="<?= base_url() ?>user" class="dt-side-nav__link" title="Pegawai"> <i
-                                                class="fa fa-user-circle-o icon-fw icon-lg"></i>
-                                        <span class="dt-side-nav__text">Data User</span> </a>
-                                </li>
-                            <?php endif ?>
-                            <li class="dt-side-nav__item">
-                                <a href="<?= base_url() ?>jabatan" class="dt-side-nav__link" title="Jabatan"> <i
-                                            class="icon icon-list icon-fw icon-lg"></i>
-                                    <span class="dt-side-nav__text">Data Jabatan</span> </a>
-                            </li>
-                        <?php endif ?>
-
-                        <li class="dt-side-nav__item dt-side-nav__header">
-                            <span class="dt-side-nav__text">Pengajuan</span>
+                        <li class="dt-side-nav__item <?php if ($this->uri->segment(2) == 'kategori') echo 'open'?>">
+                            <a href="<?= base_url('admin/kategori')?>"
+                               class="dt-side-nav__link" title="Kategori"> <i class="fa fa-list icon-fw icon-lg"></i>
+                                <span class="dt-side-nav__text">Data Kategori</span> </a>
+                        </li>
+                        <li class="dt-side-nav__item <?php if ($this->uri->segment(2) == 'produk') echo 'open'?>">
+                            <a href="<?= base_url('admin/produk') ?>"
+                               class="dt-side-nav__link" title="Produk"> <i
+                                        class="fa fa-balance-scale icon-fw icon-lg"></i>
+                                <span class="dt-side-nav__text">Data Produk</span> </a>
                         </li>
 
                         <li class="dt-side-nav__item dt-side-nav__header">
-                            <span class="dt-side-nav__text">......</span>
                         </li>
                         <li class="dt-side-nav__item">
                             <a href="<?= base_url() ?>logout"
@@ -334,7 +287,7 @@
 
                     <!-- Page Header -->
                     <div class="dt-page__header">
-                        <h1 class="dt-page__title"><?= $judul ?></h1>
+                        <h1 class="dt-page__title"><i class="fa <?= $icon_title ?>"></i> <?= $page_title ?></h1>
                     </div>
                     <!-- /page header -->
 
