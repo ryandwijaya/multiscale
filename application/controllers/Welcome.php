@@ -7,9 +7,9 @@
 		
 	public function index()
 			{
-				$this->load->view('backend/templates/header');
-				$this->load->view('backend/index');
-				$this->load->view('backend/templates/footer');
+				$this->load->view('frontend/templates/header');
+				$this->load->view('testt');
+				$this->load->view('frontend/templates/footer');
 			}		
 		
 	}
