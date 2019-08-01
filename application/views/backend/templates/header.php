@@ -9,7 +9,7 @@
     <meta name="keywords"
           content="Responsive, HTML5, admin theme, business, professional, jQuery, web design, CSS3, sass">
     <!-- /meta tags -->
-    <title>Sistem Informasi Pengajuan Cuti Pegawai</title>
+    <title><?= $title ?></title>
 
     <!-- Site favicon -->
     <link rel="shortcut icon" href="<?php echo base_url() ?>assets/backend/images/favicon.ico" type="image/x-icon">
@@ -60,7 +60,7 @@
 
                     <!-- Brand logo -->
                     <span class="dt-brand__logo">
-        <a class="dt-brand__logo-link justify-content-center" href="<?=base_url('admin')?>">
+        <a class="dt-brand__logo-link justify-content-center" href="<?= base_url('admin') ?>">
           <i class="fa fa-balance-scale fa-2x"></i> <span style="font-size: 16px">CV. Neraca</span>
         </a>
       </span>
@@ -249,12 +249,12 @@
                         <li class="dt-side-nav__item dt-side-nav__header">
                             <span class="dt-side-nav__text">Data</span>
                         </li>
-                        <li class="dt-side-nav__item <?php if ($this->uri->segment(2) == 'kategori') echo 'open'?>">
-                            <a href="<?= base_url('admin/kategori')?>"
+                        <li class="dt-side-nav__item <?php if ($this->uri->segment(2) == 'kategori') echo 'open' ?>">
+                            <a href="<?= base_url('admin/kategori') ?>"
                                class="dt-side-nav__link" title="Kategori"> <i class="fa fa-list icon-fw icon-lg"></i>
                                 <span class="dt-side-nav__text">Data Kategori</span> </a>
                         </li>
-                        <li class="dt-side-nav__item <?php if ($this->uri->segment(2) == 'produk') echo 'open'?>">
+                        <li class="dt-side-nav__item <?php if ($this->uri->segment(2) == 'produk') echo 'open' ?>">
                             <a href="<?= base_url('admin/produk') ?>"
                                class="dt-side-nav__link" title="Produk"> <i
                                         class="fa fa-balance-scale icon-fw icon-lg"></i>

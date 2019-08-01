@@ -9,6 +9,7 @@ class KategoriController extends CI_Controller{
     }
     public function index(){
         $data = array(
+            'title' => 'Data Kategori | Neraca Multiscale',
             'page_title' => 'Data Kategori',
             'icon_title' => 'fa-list'
         );

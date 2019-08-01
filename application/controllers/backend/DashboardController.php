@@ -12,6 +12,7 @@ class DashboardController extends CI_Controller
     public function index()
     {
         $data = array(
+            'title' => 'Neraca Multiscale',
             'page_title' => 'Dashboard',
             'icon_title' => 'fa-home'
         );

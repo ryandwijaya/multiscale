@@ -9,6 +9,7 @@ class ProdukController extends CI_Controller{
     }
     public function index(){
         $data = array(
+            'title' => 'Data Produk | Neraca Multiscale',
             'page_title' => 'Data Produk',
             'icon_title' => 'fa-balance-scale'
         );
