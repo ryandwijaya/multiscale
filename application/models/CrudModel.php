@@ -1,0 +1,27 @@
+<?php
+
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class CrudModel extends CI_Model{
+    public function __construct()
+    {
+        parent::__construct();
+        $this->load->database();
+    }
+
+
+    function insert($table,$data){
+        return $this->db->insert($table,$data);
+    }
+    function delete($key,$id,$table){
+        $this->db->where($key,$id);
+        return $this->db->delete($table);
+    }
+    function update($key,$id,$table,$data){
+        $this->db->where($key,$id);
+        return $this->db->update($table,$data);
+    }
+    
+}
+
+

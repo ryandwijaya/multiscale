@@ -1,6 +1,4 @@
- <!--====================  page content area ====================-->
-    <div class="page-content-area mt-5">
-        <div class="container">
+
             <div class="row">
                 <div class="col-lg-12">
                     <!--=======  page wrapper  =======-->
@@ -59,22 +57,22 @@
                                         <h3 class="contact-page-title">Tell Us Your Message</h3>
 
                                         <div class="contact-form">
-                                            <form id="contact-form" action="http://hasthemes.com/file/mail.php" method="post">
+                                            <form id="contact-form" action="<?= base_url() ?>contact/send" method="post">
                                                 <div class="form-group">
                                                     <label>Your Name <span class="required">*</span></label>
-                                                    <input type="text" name="con_name" id="con_name" required>
+                                                    <input type="text" name="pesan_nama" id="con_name" required>
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Your Email <span class="required">*</span></label>
-                                                    <input type="email" name="con_email" id="con_email" required>
+                                                    <input type="email" name="pesan_email" id="con_email" required>
                                                 </div>
 
                                                 <div class="form-group">
                                                     <label>Your Message</label>
-                                                    <textarea name="con_message" id="con_message"></textarea>
+                                                    <textarea name="pesan_isi" id="con_message"></textarea>
                                                 </div>
                                                 <div class="form-group mb-0">
-                                                    <button type="submit" value="submit" id="submit" class="contact-button" name="submit">Send</button>
+                                                    <button type="submit" id="submit" class="contact-button" name="kirim">Send</button>
                                                 </div>
                                             </form>
                                         </div>
@@ -89,6 +87,5 @@
                     <!--=======  End of page wrapper  =======-->
                 </div>
             </div>
-        </div>
-    </div>
+        
     <!--====================  End of page content area  ====================-->
