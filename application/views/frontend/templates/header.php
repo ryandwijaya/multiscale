@@ -42,7 +42,7 @@
                         <div class="navigation-menu-wrapper">
                             <nav>
                                 <ul>
-                                     <li><a href="#">HOME</a></li>
+                                     <li><a href="<?= base_url() ?>">HOME</a></li>
 
                                     <li class="menu-item-has-children"><a href="#">PAGES</a>
                                         <ul class="sub-menu">

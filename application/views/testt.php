@@ -164,7 +164,7 @@
                                             <div class="single-grid-product">
                                                 <div class="single-grid-product__image">
 
-                                                    <a href="single-product.html">
+                                                    <a href="<?= base_url() ?>product">
                                                         <img src="<?= base_url() ?>assets/frontend/img/product-neraca/good.jpeg" class="img-fluid" alt="">
                                                         <img src="<?= base_url() ?>assets/frontend/img/product-neraca/good.jpeg" class="img-fluid" alt="">
                                                     </a>
@@ -188,8 +188,8 @@
                                                     </span>
                                                     </div>
 
-                                                     
-                                                    <p class="single-grid-product__price">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad tenetur sed tempore eligendi architecto a. Est vel et quo fugiat hic veritatis amet atque rerum maiores! Optio, quas, vero. Impedit.</p>
+                                                     <a href="<?= base_url() ?>product"><h5>Nama Product</h5>
+   </a>                                                 <p class="single-grid-product__price">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad tenetur sed tempore eligendi architecto a. Est vel et quo fugiat hic veritatis amet atque rerum maiores! Optio, quas, vero. Impedit.</p>
                                                 </div>
                                             </div>
                                             <!--=======  End of single grid product  =======-->
@@ -200,7 +200,7 @@
                                             <div class="single-grid-product">
                                                 <div class="single-grid-product__image">
                                                     
-                                                    <a href="single-product.html">
+                                                    <a href="<?= base_url() ?>product">
                                                         <img src="<?= base_url() ?>assets/frontend/img/product-neraca/moisture.jpeg" class="img-fluid" alt="">
                                                         <img src="<?= base_url() ?>assets/frontend/img/product-neraca/moisture.jpeg" class="img-fluid" alt="">
                                                     </a>
@@ -224,8 +224,8 @@
                                                     </span>
                                                     </div>
 
-                                                     
-                                                    <p class="single-grid-product__price">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, doloremque error dicta ratione, voluptatibus assumenda, quaerat esse quis quo hic asperiores, quidem ducimus nemo a. Modi natus hic, quos officiis.</p>
+                                                     <a href="<?= base_url() ?>product"><h5>Nama Product</h5>
+   </a>                                                 <p class="single-grid-product__price">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, doloremque error dicta ratione, voluptatibus assumenda, quaerat esse quis quo hic asperiores, quidem ducimus nemo a. Modi natus hic, quos officiis.</p>
                                                 </div>
                                             </div>
                                             <!--=======  End of single grid product  =======-->
@@ -236,7 +236,7 @@
                                             <div class="single-grid-product">
                                                 <div class="single-grid-product__image">
                                                     
-                                                    <a href="single-product.html">
+                                                    <a href="<?= base_url() ?>product">
                                                         <img src="<?= base_url() ?>assets/frontend/img/product-neraca/tim-analitik.jpeg" class="img-fluid" alt="">
                                                         <img src="<?= base_url() ?>assets/frontend/img/product-neraca/tim-analitik.jpeg" class="img-fluid" alt="">
                                                     </a>
@@ -260,8 +260,8 @@
                                                     </span>
                                                     </div>
 
-                                                     
-                                                    <p class="single-grid-product__price">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eum perspiciatis molestias mollitia iure velit, tempore explicabo architecto culpa qui dicta, doloremque possimus veniam inventore magnam neque. Facere repudiandae, totam?</p>
+                                                     <a href="<?= base_url() ?>product"><h5>Nama Product</h5>
+   </a>                                                 <p class="single-grid-product__price">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eum perspiciatis molestias mollitia iure velit, tempore explicabo architecto culpa qui dicta, doloremque possimus veniam inventore magnam neque. Facere repudiandae, totam?</p>
                                                 </div>
                                             </div>
                                             <!--=======  End of single grid product  =======-->
@@ -272,7 +272,7 @@
                                             <div class="single-grid-product">
                                                 <div class="single-grid-product__image">
                                                     
-                                                    <a href="single-product.html">
+                                                    <a href="<?= base_url() ?>product">
                                                        <img src="<?= base_url() ?>assets/frontend/img/product-neraca/tim-mikro.jpeg" class="img-fluid" alt="">
                                                        <img src="<?= base_url() ?>assets/frontend/img/product-neraca/tim-mikro.jpeg" class="img-fluid" alt="">
                                                     </a>
@@ -296,8 +296,8 @@
                                                     </span>
                                                     </div>
 
-                                                     
-                                                    <p class="single-grid-product__price">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime blanditiis ab quam molestias similique odio dolore, necessitatibus doloribus tempora distinctio voluptates impedit quisquam harum dolorem, id quidem vitae, dolor, consequatur!</p>
+                                                     <a href="<?= base_url() ?>product"><h5>Nama Product</h5>
+   </a>                                                 <p class="single-grid-product__price">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime blanditiis ab quam molestias similique odio dolore, necessitatibus doloribus tempora distinctio voluptates impedit quisquam harum dolorem, id quidem vitae, dolor, consequatur!</p>
                                                 </div>
                                             </div>
                                             <!--=======  End of single grid product  =======-->
@@ -308,7 +308,7 @@
                                             <div class="single-grid-product">
                                                 <div class="single-grid-product__image">
                                                     
-                                                    <a href="single-product.html">
+                                                    <a href="<?= base_url() ?>product">
                                                         <img src="<?= base_url() ?>assets/frontend/img/product-neraca/moisture.jpeg" class="img-fluid" alt="">
                                                         <img src="<?= base_url() ?>assets/frontend/img/product-neraca/moisture.jpeg" class="img-fluid" alt="">
                                                     </a>
@@ -332,8 +332,8 @@
                                                     </span>
                                                     </div>
 
-                                                     
-                                                    <p class="single-grid-product__price">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab est harum quod perferendis deserunt accusantium illum nihil voluptates eos aspernatur possimus repellat pariatur consectetur, dicta nesciunt ullam, et quas neque?</p>
+                                                     <a href="<?= base_url() ?>product"><h5>Nama Product</h5>
+   </a>                                                 <p class="single-grid-product__price">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab est harum quod perferendis deserunt accusantium illum nihil voluptates eos aspernatur possimus repellat pariatur consectetur, dicta nesciunt ullam, et quas neque?</p>
                                                 </div>
                                             </div>
                                             <!--=======  End of single grid product  =======-->
@@ -371,7 +371,7 @@
                                             <div class="single-grid-product">
                                                 <div class="single-grid-product__image">
                                                     
-                                                    <a href="single-product.html">
+                                                    <a href="<?= base_url() ?>product">
                                                         <img src="<?= base_url() ?>assets/frontend/img/product-neraca/tim-mikro.jpeg" class="img-fluid" alt="">
                                                        <img src="<?= base_url() ?>assets/frontend/img/product-neraca/tim-mikro.jpeg" class="img-fluid" alt="">
                                                     </a>
@@ -395,8 +395,8 @@
                                                     </span>
                                                     </div>
 
-                                                     
-                                                    <p class="single-grid-product__price">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque veritatis illo amet ipsa, mollitia, reprehenderit obcaecati tenetur repudiandae, dolor labore adipisci nemo reiciendis voluptate laudantium. Amet, dolorem officiis est eveniet.</p>
+                                                     <a href="<?= base_url() ?>product"><h5>Nama Product</h5>
+   </a>                                                 <p class="single-grid-product__price">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque veritatis illo amet ipsa, mollitia, reprehenderit obcaecati tenetur repudiandae, dolor labore adipisci nemo reiciendis voluptate laudantium. Amet, dolorem officiis est eveniet.</p>
                                                 </div>
                                             </div>
                                             <!--=======  End of single grid product  =======-->
@@ -407,7 +407,7 @@
                                             <div class="single-grid-product">
                                                 <div class="single-grid-product__image">
 
-                                                    <a href="single-product.html">
+                                                    <a href="<?= base_url() ?>product">
                                                         <img src="<?= base_url() ?>assets/frontend/img/product-neraca/tim-mikro.jpeg" class="img-fluid" alt="">
                                                        <img src="<?= base_url() ?>assets/frontend/img/product-neraca/tim-mikro.jpeg" class="img-fluid" alt="">
                                                     </a>
@@ -431,8 +431,8 @@
                                                     </span>
                                                     </div>
 
-                                                     
-                                                    <p class="single-grid-product__price"><img src="<?= base_url() ?>assets/frontend/img/product-neraca/moisture.jpeg" class="img-fluid" alt=""></p>
+                                                     <a href="<?= base_url() ?>product"><h5>Nama Product</h5>
+   </a>                                                 <p class="single-grid-product__price"><img src="<?= base_url() ?>assets/frontend/img/product-neraca/moisture.jpeg" class="img-fluid" alt=""></p>
                                                 </div>
                                             </div>
                                             <!--=======  End of single grid product  =======-->
@@ -443,7 +443,7 @@
                                             <div class="single-grid-product">
                                                 <div class="single-grid-product__image">
                                                     
-                                                    <a href="single-product.html">
+                                                    <a href="<?= base_url() ?>product">
                                                         <img src="<?= base_url() ?>assets/frontend/img/product-neraca/tim-mikro.jpeg" class="img-fluid" alt="">
                                                        <img src="<?= base_url() ?>assets/frontend/img/product-neraca/tim-mikro.jpeg" class="img-fluid" alt="">
                                                     </a>
@@ -467,8 +467,8 @@
                                                     </span>
                                                     </div>
 
-                                                     
-                                                    <p class="single-grid-product__price"><span class="discounted-price">$100.00</span> <span class="main-price discounted">$120.00</span></p>
+                                                     <a href="<?= base_url() ?>product"><h5>Nama Product</h5>
+   </a>                                                 <p class="single-grid-product__price"><span class="discounted-price">$100.00</span> <span class="main-price discounted">$120.00</span></p>
                                                 </div>
                                             </div>
                                             <!--=======  End of single grid product  =======-->
@@ -479,7 +479,7 @@
                                             <div class="single-grid-product">
                                                 <div class="single-grid-product__image">
                                                     
-                                                    <a href="single-product.html">
+                                                    <a href="<?= base_url() ?>product">
                                                        <img src="<?= base_url() ?>assets/frontend/img/product-neraca/tim-mikro.jpeg" class="img-fluid" alt="">
                                                        <img src="<?= base_url() ?>assets/frontend/img/product-neraca/tim-mikro.jpeg" class="img-fluid" alt="">
                                                     </a>
@@ -503,8 +503,8 @@
                                                     </span>
                                                     </div>
 
-                                                    
-                                                    <p class="single-grid-product__price"><span class="discounted-price">$20.00</span> <span class="main-price discounted">$40.00</span></p>
+                                                    <a href="<?= base_url() ?>product"><h5>Nama Product</h5>
+   </a>                                                 <p class="single-grid-product__price"><span class="discounted-price">$20.00</span> <span class="main-price discounted">$40.00</span></p>
                                                 </div>
                                             </div>
                                             <!--=======  End of single grid product  =======-->
@@ -515,7 +515,7 @@
                                             <div class="single-grid-product">
                                                 <div class="single-grid-product__image">
                                                     
-                                                    <a href="single-product.html">
+                                                    <a href="<?= base_url() ?>product">
                                                         <img src="<?= base_url() ?>assets/frontend/img/product-neraca/tim-mikro.jpeg" class="img-fluid" alt="">
                                                        <img src="<?= base_url() ?>assets/frontend/img/product-neraca/tim-mikro.jpeg" class="img-fluid" alt="">
                                                     </a>
@@ -539,8 +539,8 @@
                                                     </span>
                                                     </div>
 
-                                                     
-                                                    <p class="single-grid-product__price"><span class="discounted-price">$80.00</span> <span class="main-price discounted">$100.00</span></p>
+                                                     <a href="<?= base_url() ?>product"><h5>Nama Product</h5>
+   </a>                                                 <p class="single-grid-product__price"><span class="discounted-price">$80.00</span> <span class="main-price discounted">$100.00</span></p>
                                                 </div>
                                             </div>
                                             <!--=======  End of single grid product  =======-->
@@ -577,7 +577,7 @@
                                             <div class="single-grid-product">
                                                 <div class="single-grid-product__image">
                                                     
-                                                    <a href="single-product.html">
+                                                    <a href="<?= base_url() ?>product">
                                                         <img src="<?= base_url() ?>assets/frontend/img/product-neraca/tim-mikro.jpeg" class="img-fluid" alt="">
                                                        <img src="<?= base_url() ?>assets/frontend/img/product-neraca/tim-mikro.jpeg" class="img-fluid" alt="">
                                                     </a>
@@ -601,7 +601,7 @@
                                                     </span>
                                                     </div>
 
-                                                     <a href="single-product.html">Cillum dolore lorem ipsum decoration item</a></h3>
+                                                     <a href="<?= base_url() ?>product">Cillum dolore lorem ipsum decoration item</a><<a href="<?= base_url() ?>product"><h5>Nama Product</h5>/h3></a>
                                                     <p class="single-grid-product__price"><span class="discounted-price">$80.00</span> <span class="main-price discounted">$100.00</span></p>
                                                 </div>
                                             </div>
@@ -616,7 +616,7 @@
                                                         <span class="sale">-20%</span>
                                                         <span class="new">New</span>
                                                     </div>
-                                                    <a href="single-product.html">
+                                                    <a href="<?= base_url() ?>product">
                                                         <img src="<?= base_url() ?>assets/frontend/img/products/1-600x800.jpg" class="img-fluid" alt="">
                                                         <img src="<?= base_url() ?>assets/frontend/img/products/1_1-600x800.jpg" class="img-fluid" alt="">
                                                     </a>
@@ -640,7 +640,7 @@
                                                     </span>
                                                     </div>
 
-                                                     <a href="single-product.html">Cillum dolore lorem ipsum decoration item</a></h3>
+                                                     <a href="<?= base_url() ?>product">Cillum dolore lorem ipsum decoration item</a><<a href="<?= base_url() ?>product"><h5>Nama Product</h5>/h3></a>
                                                     <p class="single-grid-product__price"><span class="discounted-price">$100.00</span> <span class="main-price discounted">$120.00</span></p>
                                                 </div>
                                             </div>
@@ -654,7 +654,7 @@
                                                     <div class="single-grid-product__label">
                                                         <span class="sale">-20%</span>
                                                     </div>
-                                                    <a href="single-product.html">
+                                                    <a href="<?= base_url() ?>product">
                                                         <img src="<?= base_url() ?>assets/frontend/img/products/2-600x800.jpg" class="img-fluid" alt="">
                                                         <img src="<?= base_url() ?>assets/frontend/img/products/2_1-600x800.jpg" class="img-fluid" alt="">
                                                     </a>
@@ -678,7 +678,7 @@
                                                     </span>
                                                     </div>
 
-                                                     <a href="single-product.html">lorem ipsum cilium dolore decoration item</a></h3>
+                                                     <a href="<?= base_url() ?>product">lorem ipsum cilium dolore decoration item</a><<a href="<?= base_url() ?>product"><h5>Nama Product</h5>/h3></a>
                                                     <p class="single-grid-product__price"><span class="discounted-price">$20.00</span> <span class="main-price discounted">$40.00</span></p>
                                                 </div>
                                             </div>
@@ -692,7 +692,7 @@
                                                     <div class="single-grid-product__label">
                                                         <span class="new">New</span>
                                                     </div>
-                                                    <a href="single-product.html">
+                                                    <a href="<?= base_url() ?>product">
                                                         <img src="<?= base_url() ?>assets/frontend/img/products/3-600x800.jpg" class="img-fluid" alt="">
                                                         <img src="<?= base_url() ?>assets/frontend/img/products/3_1-600x800.jpg" class="img-fluid" alt="">
                                                     </a>
@@ -716,7 +716,7 @@
                                                     </span>
                                                     </div>
 
-                                                     <a href="single-product.html">lorem ipsum cilium dolore decoration item</a></h3>
+                                                     <a href="<?= base_url() ?>product">lorem ipsum cilium dolore decoration item</a><<a href="<?= base_url() ?>product"><h5>Nama Product</h5>/h3></a>
                                                     <p class="single-grid-product__price"><span class="discounted-price">$40.00</span> <span class="main-price discounted">$60.00</span></p>
                                                 </div>
                                             </div>
@@ -728,7 +728,7 @@
                                             <div class="single-grid-product">
                                                 <div class="single-grid-product__image">
 
-                                                    <a href="single-product.html">
+                                                    <a href="<?= base_url() ?>product">
                                                         <img src="<?= base_url() ?>assets/frontend/img/products/4-600x800.jpg" class="img-fluid" alt="">
                                                         <img src="<?= base_url() ?>assets/frontend/img/products/4_1-600x800.jpg" class="img-fluid" alt="">
                                                     </a>
@@ -752,7 +752,7 @@
                                                     </span>
                                                     </div>
 
-                                                     <a href="single-product.html">Cillum dolore lorem ipsum decoration item</a></h3>
+                                                     <a href="<?= base_url() ?>product">Cillum dolore lorem ipsum decoration item</a><<a href="<?= base_url() ?>product"><h5>Nama Product</h5>/h3></a>
                                                     <p class="single-grid-product__price"><span class="main-price">$120.00</span></p>
                                                 </div>
                                             </div>
@@ -792,7 +792,7 @@
                                                     <div class="single-grid-product__label">
                                                         <span class="new">New</span>
                                                     </div>
-                                                    <a href="single-product.html">
+                                                    <a href="<?= base_url() ?>product">
                                                         <img src="<?= base_url() ?>assets/frontend/img/products/3-600x800.jpg" class="img-fluid" alt="">
                                                         <img src="<?= base_url() ?>assets/frontend/img/products/3_1-600x800.jpg" class="img-fluid" alt="">
                                                     </a>
@@ -816,7 +816,7 @@
                                                     </span>
                                                     </div>
 
-                                                     <a href="single-product.html">lorem ipsum cilium dolore decoration item</a></h3>
+                                                     <a href="<?= base_url() ?>product">lorem ipsum cilium dolore decoration item</a><<a href="<?= base_url() ?>product"><h5>Nama Product</h5>/h3></a>
                                                     <p class="single-grid-product__price"><span class="discounted-price">$40.00</span> <span class="main-price discounted">$60.00</span></p>
                                                 </div>
                                             </div>
@@ -831,7 +831,7 @@
                                                         <span class="sale">-20%</span>
                                                         <span class="new">New</span>
                                                     </div>
-                                                    <a href="single-product.html">
+                                                    <a href="<?= base_url() ?>product">
                                                         <img src="<?= base_url() ?>assets/frontend/img/products/1-600x800.jpg" class="img-fluid" alt="">
                                                         <img src="<?= base_url() ?>assets/frontend/img/products/1_1-600x800.jpg" class="img-fluid" alt="">
                                                     </a>
@@ -855,7 +855,7 @@
                                                     </span>
                                                     </div>
 
-                                                     <a href="single-product.html">Cillum dolore lorem ipsum decoration item</a></h3>
+                                                     <a href="<?= base_url() ?>product">Cillum dolore lorem ipsum decoration item</a><<a href="<?= base_url() ?>product"><h5>Nama Product</h5>/h3></a>
                                                     <p class="single-grid-product__price"><span class="discounted-price">$100.00</span> <span class="main-price discounted">$120.00</span></p>
                                                 </div>
                                             </div>
@@ -869,7 +869,7 @@
                                                     <div class="single-grid-product__label">
                                                         <span class="sale">-20%</span>
                                                     </div>
-                                                    <a href="single-product.html">
+                                                    <a href="<?= base_url() ?>product">
                                                         <img src="<?= base_url() ?>assets/frontend/img/products/2-600x800.jpg" class="img-fluid" alt="">
                                                         <img src="<?= base_url() ?>assets/frontend/img/products/2_1-600x800.jpg" class="img-fluid" alt="">
                                                     </a>
@@ -893,7 +893,7 @@
                                                     </span>
                                                     </div>
 
-                                                     <a href="single-product.html">lorem ipsum cilium dolore decoration item</a></h3>
+                                                     <a href="<?= base_url() ?>product">lorem ipsum cilium dolore decoration item</a><<a href="<?= base_url() ?>product"><h5>Nama Product</h5>/h3></a>
                                                     <p class="single-grid-product__price"><span class="discounted-price">$20.00</span> <span class="main-price discounted">$40.00</span></p>
                                                 </div>
                                             </div>
@@ -905,7 +905,7 @@
                                             <div class="single-grid-product">
                                                 <div class="single-grid-product__image">
 
-                                                    <a href="single-product.html">
+                                                    <a href="<?= base_url() ?>product">
                                                         <img src="<?= base_url() ?>assets/frontend/img/products/4-600x800.jpg" class="img-fluid" alt="">
                                                         <img src="<?= base_url() ?>assets/frontend/img/products/4_1-600x800.jpg" class="img-fluid" alt="">
                                                     </a>
@@ -929,7 +929,7 @@
                                                     </span>
                                                     </div>
 
-                                                     <a href="single-product.html">lorem ipsum Cillum dolore decoration item</a></h3>
+                                                     <a href="<?= base_url() ?>product">lorem ipsum Cillum dolore decoration item</a><<a href="<?= base_url() ?>product"><h5>Nama Product</h5>/h3></a>
                                                     <p class="single-grid-product__price"><span class="main-price">$120.00</span></p>
                                                 </div>
                                             </div>
@@ -944,7 +944,7 @@
                                                         <span class="sale">-20%</span>
                                                         <span class="new">New</span>
                                                     </div>
-                                                    <a href="single-product.html">
+                                                    <a href="<?= base_url() ?>product">
                                                         <img src="<?= base_url() ?>assets/frontend/img/products/5-600x800.jpg" class="img-fluid" alt="">
                                                         <img src="<?= base_url() ?>assets/frontend/img/products/5_1-600x800.jpg" class="img-fluid" alt="">
                                                     </a>
@@ -968,7 +968,7 @@
                                                     </span>
                                                     </div>
 
-                                                     <a href="single-product.html">Cillum dolore lorem ipsum decoration item</a></h3>
+                                                     <a href="<?= base_url() ?>product">Cillum dolore lorem ipsum decoration item</a><<a href="<?= base_url() ?>product"><h5>Nama Product</h5>/h3></a>
                                                     <p class="single-grid-product__price"><span class="discounted-price">$80.00</span> <span class="main-price discounted">$100.00</span></p>
                                                 </div>
                                             </div>

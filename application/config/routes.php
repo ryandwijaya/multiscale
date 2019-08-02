@@ -8,7 +8,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	
 
 	$route['dashboard'] = 'backend/DashboardController/index';
+
+
 	$route['contact'] = 'frontend/ContactController/index';
+	$route['product'] = 'frontend/ProductController/index';
 
 
 

@@ -34,7 +34,7 @@
 
                                         <div class="single-contact-block">
                                             <h4><i class="fa fa-phone"></i> Phone</h4>
-                                            <p>Mobile: <a href="https://api.whatsapp.com/send?phone=6282385554897"></a> +62-823-8555-4897</p>
+                                            <p>Mobile: <a href="https://api.whatsapp.com/send?phone=6282385554897"></a> +628-23-8555-4897</p>
                                         </div>
 
                                         <!--=======  End of single contact block  =======-->
