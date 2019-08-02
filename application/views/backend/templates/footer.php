@@ -44,10 +44,15 @@
 <script src="<?php echo base_url() ?>assets/backend/node_modules/datatables.net-bs4/js/dataTables.bootstrap4.js"></script>
 <script src="<?php echo base_url() ?>assets/backend/js/custom/data-table.js"></script>
 
+<script src="<?php echo base_url() ?>assets/backend/node_modules/sweetalert2/dist/sweetalert2.js"></script>
+<script src="<?php echo base_url() ?>assets/backend/js/custom/sweet-alert.js"></script>
+
+<script src="<?php echo base_url() ?>assets/backend/js/custom/apps/multiscale.js"></script>
+
 
 <script>
 $(function() {
-var timeout = 2000; // in miliseconds (3*1000)
+var timeout = 5000; // in miliseconds (3*1000)
 
 $('.hide-it').delay(timeout).fadeOut(200);
 });
