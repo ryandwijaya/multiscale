@@ -63,4 +63,14 @@ class KategoriController extends CI_Controller{
 			}
 		}
 	}
+
+	public function hapus($id){
+		$hapus = $this->KategoriModel->hapus_kategori($id);
+		if ($hapus > 0){
+			$this->session->set_flashdata('alert', 'success_delete');
+			redirect('admin/kategori');
+		}else{
+			redirect('admin/kategori');
+		}
+	}
 }

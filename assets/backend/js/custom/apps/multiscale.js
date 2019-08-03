@@ -24,4 +24,12 @@ $(document).ready(function () {
 			}
 		})
 	});
+	// ------------------------------------------------------------------------------------------
+
+	$('.kategori-hapus').click(function () {
+		var id = $(this).val();
+		var html = '' +
+			'<a href="'+root+'admin/kategori/hapus/'+id+'" class="btn btn-danger btn-sm">Hapus</a>';
+		$('.btn-hapus-kategori').html(html);
+	});
 });

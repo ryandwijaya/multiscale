@@ -7,6 +7,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   $route['admin/kategori/tambah'] = 'backend/KategoriController/tambah';
   $route['admin/kategori/updateForm/(:any)'] = 'backend/KategoriController/updateForm/$1';
   $route['admin/kategori/update'] = 'backend/KategoriController/update';
+  $route['admin/kategori/hapus/(:any)'] = 'backend/KategoriController/hapus/$1';
 
   $route['admin/produk'] = 'backend/ProdukController';
 

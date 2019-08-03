@@ -26,7 +26,7 @@
                     <td><?=$value['kategori_nama']?></td>
                     <td class="text-center">
                         <button type="button" class="btn btn-outline-success btn-sm kategori-edit" data-toggle="modal" data-target="#form-edit-kategori" title="Edit" value="<?=$value['kategori_id']?>"><i class="fa fa-edit"></i></button>
-                        <a href="#" class="btn btn-outline-danger btn-sm" data-toggle="tooltip" data-html="true" title data-original-title="Hapus"><i class="fa fa-trash"></i></a>
+                        <button type="button" class="btn btn-outline-danger btn-sm kategori-hapus" data-toggle="modal" data-target="#modal-hapus-kategori" title="Hapus" value="<?=$value['kategori_id']?>"><i class="fa fa-trash"></i></button>
                     </td>
                 </tr>
 				<?php
@@ -90,7 +90,7 @@
 	</div>
 	<!-- /modal -->
 
-	<!-- Modal input -->
+	<!-- Modal Edit -->
 	<div class="modal fade" id="form-edit-kategori" tabindex="-1" role="dialog"
 		 aria-labelledby="model-8"
 		 aria-hidden="true">
@@ -128,6 +128,45 @@
 					<button type="submit" name="update" class="btn btn-primary btn-sm"
 							>Simpan
 					</button>
+				</div>
+				<?=form_close()?>
+				<!-- /modal footer -->
+
+			</div>
+			<!-- /modal content -->
+
+		</div>
+	</div>
+	<!-- /modal -->
+
+	<!-- Modal Hapus -->
+	<div class="modal fade" id="modal-hapus-kategori" tabindex="-1" role="dialog"
+		 aria-labelledby="model-8"
+		 aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+
+			<!-- Modal Content -->
+			<div class="modal-content">
+
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h3 class="modal-title" id="model-8">Hapus Data Kategori ?</h3>
+					<button type="button" class="close" data-dismiss="modal"
+							aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<!-- /modal header -->
+
+				<!-- Modal Body -->
+				<!-- /modal body -->
+
+				<!-- Modal Footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-outline-primary btn-sm"
+							data-dismiss="modal">Tutup
+					</button>
+					<div class="btn-hapus-kategori"></div>
 				</div>
 				<?=form_close()?>
 				<!-- /modal footer -->
