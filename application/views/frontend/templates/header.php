@@ -56,7 +56,7 @@
                                             <li class="menu-item-has-children"><a href="#">page list two</a>
                                                 <ul class="sub-menu">
                                                     <li><a href="my-account.html">My Account</a></li>
-                                                    <li><a href="login-register.html">Login Register</a></li>
+                                                    <li><a href="<?= base_url() ?>login">Login</a></li>
                                                     <li><a href="faq.html">FAQ</a></li>
                                                 </ul>
                                             </li>
@@ -169,8 +169,8 @@
                                             <div class="single-settings-block">
                                                 <h4 class="title">MY ACCOUNT </h4>
                                                 <ul>
-                                                    <li><a href="login-register.html">Register</a></li>
-                                                    <li><a href="login-register.html">Login</a></li>
+                                                    <li><a href="<?= base_url() ?>login">Register</a></li>
+                                                    <li><a href="<?= base_url() ?>login">Login</a></li>
                                                 </ul>
                                             </div>
                                             
