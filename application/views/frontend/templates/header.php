@@ -34,8 +34,8 @@
                     <div class="header-wrapper d-none d-lg-flex">
                         <!-- logo -->
                         <div class="logo">
-                            <a href="index.html">
-                                <img src="<?= base_url() ?>assets/frontend/img/logo.png" class="img-fluid" alt="">
+                            <a href="<?= base_url() ?>">
+                                <img src="<?= base_url() ?>assets/frontend/img/logo.png" class="img-fluid" alt="" width="80%">
                             </a>
                         </div>
                         <!-- menu wrapper -->
@@ -56,7 +56,7 @@
                                             <li class="menu-item-has-children"><a href="#">page list two</a>
                                                 <ul class="sub-menu">
                                                     <li><a href="my-account.html">My Account</a></li>
-                                                    <li><a href="login-register.html">Login Register</a></li>
+                                                    <li><a href="<?= base_url() ?>login">Login</a></li>
                                                     <li><a href="faq.html">FAQ</a></li>
                                                 </ul>
                                             </li>
@@ -169,8 +169,8 @@
                                             <div class="single-settings-block">
                                                 <h4 class="title">MY ACCOUNT </h4>
                                                 <ul>
-                                                    <li><a href="login-register.html">Register</a></li>
-                                                    <li><a href="login-register.html">Login</a></li>
+                                                    <li><a href="<?= base_url() ?>login">Register</a></li>
+                                                    <li><a href="<?= base_url() ?>login">Login</a></li>
                                                 </ul>
                                             </div>
                                             
@@ -189,7 +189,7 @@
                             <div class="col-6 col-md-6">
                                 <div class="header-logo">
                                     <a href="index.html">
-                                        <img src="<?= base_url() ?>assets/frontend/img/logo.png" class="img-fluid" alt="">
+                                        <img src="<?= base_url() ?>assets/frontend/img/logo.png" class="img-fluid" alt="" width="80%">
                                     </a>
                                 </div>
                             </div>
@@ -222,4 +222,20 @@
         </div>
     </div>
     <!--====================  End of header area  ====================-->
+
+   <div class="page-content-area">
+        <div class="container mt-5">
+            <?php if ($this->session->flashdata('alert') == 'success_mail') { ?>
+                <div class="row">
+                <div class="col-md-12">
+                    <div class="alert alert-success hide-it">
+                        <span>SUSKES!! Pesan anda sudah terkirim, kami akan merespon pesan anda melalui email. Pastikan email yang tertera adalah email aktif, Thx.</span>
+                    </div>
+                </div>
+            </div>
+            <?php } ?>
+            
+
+            
+            
    

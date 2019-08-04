@@ -1,4 +1,9 @@
 
+   
+     </div>
+    </div>
+
+    
     <!--====================  footer area ====================-->
     <div class="footer-area">
         <div class="footer-copyright">
@@ -10,7 +15,7 @@
                                 <div class="row align-items-center no-gutters">
                                     <div class="col-lg-2 col-md-2">
                                         <div class="footer-logo">
-                                            <a href="#"><img src="<?= base_url() ?>assets/frontend/img/logo.png" class="img-fluid" alt=""></a>
+                                            <a href="#"><img src="<?= base_url() ?>assets/frontend/img/logo.png" class="img-fluid" alt="" width="80%"></a>
                                         </div>
                                     </div>
 
@@ -219,158 +224,7 @@
     <!--====================  End of search overlay  ====================-->
     <!--====================  quick view ====================-->
 
-    <div class="modal fade quick-view-modal-container" id="quick-view-modal-container" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="col-xl-12 col-lg-12">
-                        <!--=======  single product main content area  =======-->
-                        <div class="single-product-main-content-area">
-                            <div class="row">
-                                <div class="col-xl-5 col-lg-6">
-                                    <!--=======  product details slider area  =======-->
-
-                                    <div class="product-details-slider-area">
-
-
-                                        <div class="big-image-wrapper">
-
-                                            <div class="product-details-big-image-slider-wrapper-quick product-details-big-image-slider-wrapper--bottom-space ht-slick-slider" data-slick-setting='{
-                "slidesToShow": 1,
-                "slidesToScroll": 1,
-                "arrows": false,
-                "autoplay": false,
-                "autoplaySpeed": 5000,
-                "fade": true,
-                "speed": 500,
-                "prevArrow": {"buttonClass": "slick-prev", "iconClass": "fa fa-angle-left" },
-                "nextArrow": {"buttonClass": "slick-next", "iconClass": "fa fa-angle-right" }
-            }' data-slick-responsive='[
-                {"breakpoint":1501, "settings": {"slidesToShow": 1, "arrows": false} },
-                {"breakpoint":1199, "settings": {"slidesToShow": 1, "arrows": false} },
-                {"breakpoint":991, "settings": {"slidesToShow": 1, "arrows": false, "slidesToScroll": 1} },
-                {"breakpoint":767, "settings": {"slidesToShow": 1, "arrows": false, "slidesToScroll": 1} },
-                {"breakpoint":575, "settings": {"slidesToShow": 1, "arrows": false, "slidesToScroll": 1} },
-                {"breakpoint":479, "settings": {"slidesToShow": 1, "arrows": false, "slidesToScroll": 1} }
-            ]'>
-                                                <div class="single-image">
-                                                    <img src="<?= base_url() ?>assets/frontend/img/products/big1-1.jpg" class="img-fluid" alt="">
-                                                </div>
-                                                <div class="single-image">
-                                                    <img src="<?= base_url() ?>assets/frontend/img/products/big1-2.jpg" class="img-fluid" alt="">
-                                                </div>
-                                                <div class="single-image">
-                                                    <img src="<?= base_url() ?>assets/frontend/img/products/big1-3.jpg" class="img-fluid" alt="">
-                                                </div>
-                                                <div class="single-image">
-                                                    <img src="<?= base_url() ?>assets/frontend/img/products/big1-4.jpg" class="img-fluid" alt="">
-                                                </div>
-                                                <div class="single-image">
-                                                    <img src="<?= base_url() ?>assets/frontend/img/products/big1-5.jpg" class="img-fluid" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="product-details-small-image-slider-wrapper product-details-small-image-slider-wrapper--horizontal-space ht-slick-slider" data-slick-setting='{
-            "slidesToShow": 4,
-            "slidesToScroll": 1,
-            "arrows": true,
-            "autoplay": false,
-            "autoplaySpeed": 5000,
-            "speed": 500,
-            "asNavFor": ".product-details-big-image-slider-wrapper-quick",
-            "focusOnSelect": true,
-            "centerMode": false,
-            "prevArrow": {"buttonClass": "slick-prev", "iconClass": "fa fa-angle-left" },
-            "nextArrow": {"buttonClass": "slick-next", "iconClass": "fa fa-angle-right" }
-        }' data-slick-responsive='[
-            {"breakpoint":1501, "settings": {"slidesToShow": 3, "arrows": false} },
-            {"breakpoint":1199, "settings": {"slidesToShow": 3, "arrows": false} },
-            {"breakpoint":991, "settings": {"slidesToShow": 5, "arrows": false, "slidesToScroll": 1} },
-            {"breakpoint":767, "settings": {"slidesToShow": 3, "arrows": false, "slidesToScroll": 1} },
-            {"breakpoint":575, "settings": {"slidesToShow": 3, "arrows": false, "slidesToScroll": 1} },
-            {"breakpoint":479, "settings": {"slidesToShow": 2, "arrows": false, "slidesToScroll": 1} }
-        ]'>
-                                            <div class="single-image">
-                                                <img src="<?= base_url() ?>assets/frontend/img/products/big1-1.jpg" class="img-fluid" alt="">
-                                            </div>
-                                            <div class="single-image">
-                                                <img src="<?= base_url() ?>assets/frontend/img/products/big1-2.jpg" class="img-fluid" alt="">
-                                            </div>
-                                            <div class="single-image">
-                                                <img src="<?= base_url() ?>assets/frontend/img/products/big1-3.jpg" class="img-fluid" alt="">
-                                            </div>
-                                            <div class="single-image">
-                                                <img src="<?= base_url() ?>assets/frontend/img/products/big1-4.jpg" class="img-fluid" alt="">
-                                            </div>
-                                            <div class="single-image">
-                                                <img src="<?= base_url() ?>assets/frontend/img/products/big1-5.jpg" class="img-fluid" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!--=======  End of product details slider area  =======-->
-                                </div>
-                                <div class="col-xl-7 col-lg-6">
-                                    <!--=======  single product content description  =======-->
-                                    <div class="single-product-content-description">
-                                        <p class="single-info">Brands <a href="shop-left-sidebar.html">Dolor</a> </p>
-                                        <h4 class="product-title">Lorem ipsum dolor set amet decor</h4>
-                                        <div class="product-rating">
-                                            <span class="rating">
-                <i class="ion-android-star active"></i>
-                <i class="ion-android-star active"></i>
-                <i class="ion-android-star active"></i>
-                <i class="ion-android-star active"></i>
-                <i class="ion-android-star-outline"></i>
-            </span>
-
-                                            <span class="review-count"> <a href="#">(2 reviews)</a> | <a href="#">Write A Review</a> </span>
-                                        </div>
-
-                                        <p class="single-grid-product__price"><span class="discounted-price">$100.00</span> <span class="main-price discounted">$120.00</span></p>
-
-                                        <p class="single-info">Product Code: <span class="value">CODE123</span> </p>
-                                        <p class="single-info">Reward Points: <span class="value">200</span> </p>
-                                        <p class="single-info">Availability: <span class="value">In Stock</span> </p>
-
-                                        <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, delectus. Voluptates omnis distinctio vitae quo quia veniam minima dolorem hic necessitatibus pariatur, quae fuga similique optio laboriosam assumenda voluptatum aperiam.</p>
-
-                                        <div class="product-actions product-actions--quick-view">
-                                            <div class="quantity-selection">
-                                                <label>Qty</label>
-                                                <input type="number" value="1" min="1">
-                                            </div>
-
-                                            <div class="product-buttons">
-                                                <a class="cart-btn" href="#"> <i class="ion-bag"></i> ADD TO CART</a>
-                                                <span class="wishlist-compare-btn">
-                    <a> <i class="ion-heart"></i></a>
-                    <a> <i class="ion-android-options"></i></a>
-                </span>
-                                            </div>
-
-                                        </div>
-
-
-                                    </div>
-                                    <!--=======  End of single product content description  =======-->
-                                </div>
-                            </div>
-                        </div>
-                        <!--=======  End of single product main content area  =======-->
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
+    
     <!--====================  End of quick view  ====================-->
 
     <!-- scroll to top  -->
@@ -387,8 +241,16 @@
 
     <!-- Active JS -->
     <script src="<?= base_url() ?>assets/frontend/js/active.js"></script>
-
     <!--=====  End of JS files ======-->
+    
+    <script>
+    $(function() {
+    var timeout = 3000; // in miliseconds (3*1000)
+
+    $('.hide-it').delay(timeout).fadeOut(300);
+    });
+
+    </script>
 
 </body>
 

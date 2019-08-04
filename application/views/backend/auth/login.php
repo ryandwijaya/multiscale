@@ -8,22 +8,22 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <!-- /meta tags -->
-<title>Login - Sistem Pengajuan Cuti Pegawai</title>
+<title>Login - Neraca MultiScale</title>
 
 <!-- Site favicon -->
-<link rel="shortcut icon" href="<?= base_url() ?>assets/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="<?= base_url() ?>assets/backend/images/favicon.ico" type="image/x-icon">
 <!-- /site favicon -->
 
 <!-- Font Icon Styles -->
-<link rel="stylesheet" href="<?= base_url() ?>assets/node_modules/flag-icon-css/css/flag-icon.min.css">
-<link rel="stylesheet" href="<?= base_url() ?>assets/vendors/gaxon-icon/styles.css">
+<link rel="stylesheet" href="<?= base_url() ?>assets/backend/node_modules/flag-icon-css/css/flag-icon.min.css">
+<link rel="stylesheet" href="<?= base_url() ?>assets/backend/vendors/gaxon-icon/styles.css">
 <!-- /font icon Styles -->
 
 <!-- Perfect Scrollbar stylesheet -->
-<link rel="stylesheet" href="<?= base_url() ?>assets/node_modules/perfect-scrollbar/css/perfect-scrollbar.css">
+<link rel="stylesheet" href="<?= base_url() ?>assets/backend/node_modules/perfect-scrollbar/css/perfect-scrollbar.css">
 <!-- /perfect scrollbar stylesheet -->
 
-<!-- Load Styles -->    <link rel="stylesheet" href="<?= base_url() ?>assets/css/light-style-1.min.css">
+<!-- Load Styles -->    <link rel="stylesheet" href="<?= base_url() ?>assets/backend/css/light-style-1.min.css">
     <!-- /load styles -->
 
 </head>
@@ -132,19 +132,19 @@
 <!-- /root -->
 
 <!-- Optional JavaScript -->
-<script src="<?= base_url() ?>assets/node_modules/jquery/dist/jquery.min.js"></script>
-<script src="<?= base_url() ?>assets/node_modules/moment/moment.js"></script>
-<script src="<?= base_url() ?>assets/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="<?= base_url() ?>assets/backend/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="<?= base_url() ?>assets/backend/node_modules/moment/moment.js"></script>
+<script src="<?= base_url() ?>assets/backend/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Perfect Scrollbar jQuery -->
-<script src="<?= base_url() ?>assets/node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+<script src="<?= base_url() ?>assets/backend/node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
 <!-- /perfect scrollbar jQuery -->
 
 <!-- masonry script -->
-<script src="<?= base_url() ?>assets/node_modules/masonry-layout/dist/masonry.pkgd.min.js"></script>
-<script src="<?= base_url() ?>assets/node_modules/sweetalert2/dist/sweetalert2.js"></script>
-<script src="<?= base_url() ?>assets/js/functions.js"></script>
-<script src="<?= base_url() ?>assets/js/customizer.js"></script><!-- Custom JavaScript -->
-<script src="<?= base_url() ?>assets/js/script.js"></script>
+<script src="<?= base_url() ?>assets/backend/node_modules/masonry-layout/dist/masonry.pkgd.min.js"></script>
+<script src="<?= base_url() ?>assets/backend/node_modules/sweetalert2/dist/sweetalert2.js"></script>
+<script src="<?= base_url() ?>assets/backend/js/functions.js"></script>
+<script src="<?= base_url() ?>assets/backend/js/customizer.js"></script><!-- Custom JavaScript -->
+<script src="<?= base_url() ?>assets/backend/js/script.js"></script>
 
 </body>
 

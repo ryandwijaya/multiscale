@@ -1,5 +1,4 @@
-<div class="page-content-area">
-        <div class="container">
+
             <div class="row">
                 <div class="col-lg-12">
                     <!--=======  page wrapper  =======-->
@@ -273,6 +272,5 @@
                     <!--=======  End of page wrapper  =======-->
                 </div>
             </div>
-        </div>
-    </div>
+       
     <!--====================  End of page content area  ====================-->
