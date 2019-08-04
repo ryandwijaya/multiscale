@@ -247,7 +247,7 @@
                             </a>
                         </li>
                         <li class="dt-side-nav__item dt-side-nav__header">
-                            <span class="dt-side-nav__text">Data</span>
+                            <span class="dt-side-nav__text">Data </span>
                         </li>
                         <li class="dt-side-nav__item <?php if ($this->uri->segment(2) == 'kategori') echo 'open' ?>">
                             <a href="<?= base_url('admin/kategori') ?>"
@@ -260,6 +260,25 @@
                                         class="fa fa-balance-scale icon-fw icon-lg"></i>
                                 <span class="dt-side-nav__text">Data Produk</span> </a>
                         </li>
+
+						<li class="dt-side-nav__item dt-side-nav__header">
+							<span class="dt-side-nav__text">Website</span>
+						</li>
+
+
+						<li class="dt-side-nav__item <?php if ($this->uri->segment(2) == 'banner') echo 'open' ?>">
+							<a href="<?= base_url('admin/produk') ?>"
+							   class="dt-side-nav__link" title="Produk"> <i
+									class="fa fa-picture-o icon-fw icon-lg"></i>
+								<span class="dt-side-nav__text">Data Banner</span> </a>
+						</li>
+
+						<li class="dt-side-nav__item <?php if ($this->uri->segment(2) == 'pesan') echo 'open' ?>">
+							<a href="<?= base_url('admin/pesan') ?>"
+							   class="dt-side-nav__link" title="Produk"> <i
+									class="fa fa-envelope icon-fw icon-lg"></i>
+								<span class="dt-side-nav__text">Pesan</span> </a>
+						</li>
 
                         <li class="dt-side-nav__item dt-side-nav__header">
                         </li>

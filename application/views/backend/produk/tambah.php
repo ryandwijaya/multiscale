@@ -27,6 +27,7 @@
 		<div class="col-md-10 col-sm-9">
 			<select class="form-control" id="normal-input-1"
 					required autocomplete="off" name="kategori">
+				<option disabled="" selected="selected">- Pilih Kategori -</option>
 				<?php
 				foreach ($kategori as $key => $value):
 					?>
