@@ -81,7 +81,7 @@
 			   for="file-field">Foto</label>
 
 		<div class="col-md-10 col-sm-9">
-			<img src="<?=base_url('assets/upload/images/'.$produk['produk_foto'])?>" width="100%" alt="Foto">
+			<img src="<?=base_url('assets/upload/images/produk/'.$produk['produk_foto'])?>" width="100%" alt="Foto">
 			<hr>
 			<button type="button"  class="btn btn-outline-primary btn-xs" onclick="showInput()">Ganti Foto ?</button>
 			<br>

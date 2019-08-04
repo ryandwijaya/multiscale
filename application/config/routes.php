@@ -19,6 +19,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	$route['admin/pesan'] = 'backend/PesanController';
 	$route['admin/pesan/lihat/(:any)'] = 'backend/PesanController/lihat/$1';
 
+	$route['admin/banner'] = 'backend/BannerController';
+	$route['admin/banner/tambah'] = 'backend/BannerController/tambah';
+	$route['admin/banner/update/(:any)'] = 'backend/BannerController/update/$1';
+	$route['admin/banner/hapus/(:any)'] = 'backend/BannerController/hapus/$1';
+
 	//frontend
 			$route['contact'] = 'frontend/ContactController/index';
 			$route['contact/send'] = 'frontend/ContactController/send_pesan';
