@@ -4,7 +4,7 @@
     <!-- Card Body -->
     <div class="dt-card__body">
 
-        <a href="#" class="btn btn-outline-primary btn-sm" style=""><i class="fa fa-plus"></i> Tambah Produk</a><hr>
+        <a href="<?=base_url('admin/produk/tambah')?>" class="btn btn-outline-primary btn-sm" style=""><i class="fa fa-plus"></i> Tambah Produk</a><hr>
         <!-- Tables -->
         <div class="table-responsive">
 
@@ -19,17 +19,25 @@
                 </tr>
                 </thead>
                 <tbody>
+				<?php
+				$no = 1;
+				foreach ($produk as $key=>$value):
+				?>
                 <tr>
-                    <td>1</td>
-                    <td>Timbangan Cabe</td>
-                    <td>Timbangan Pasar</td>
-                    <td>2.000.000.000</td>
+                    <td><?=$no?></td>
+                    <td><?=$value['produk_nama']?></td>
+                    <td><?=$value['kategori_nama']?></td>
+                    <td><?=$value['produk_harga']?></td>
                     <td class="text-center">
                         <a href="#" class="btn btn-outline-info btn-sm" data-toggle="tooltip" data-html="true" title data-original-title="Lihat"><i class="fa fa-eye"></i></a>
                         <a href="#" class="btn btn-outline-success btn-sm" data-toggle="tooltip" data-html="true" title data-original-title="Edit"><i class="fa fa-edit"></i></a>
                         <a href="#" class="btn btn-outline-danger btn-sm" data-toggle="tooltip" data-html="true" title data-original-title="Hapus"><i class="fa fa-trash"></i></a>
                     </td>
                 </tr>
+				<?php
+				$no++;
+				endforeach;
+				?>
                 </tbody>
             </table>
 
