@@ -12,10 +12,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	$route['admin/produk'] = 'backend/ProdukController';
 	$route['admin/produk/tambah'] = 'backend/ProdukController/tambah';
+	$route['admin/produk/lihat/(:any)'] = 'backend/ProdukController/lihat/$1';
 	$route['admin/produk/update/(:any)'] = 'backend/ProdukController/update/$1';
 	$route['admin/produk/hapus/(:any)'] = 'backend/ProdukController/hapus/$1';
 
-  			//frontend
+	$route['admin/pesan'] = 'backend/PesanController';
+	$route['admin/pesan/lihat/(:any)'] = 'backend/PesanController/lihat/$1';
+
+	//frontend
 			$route['contact'] = 'frontend/ContactController/index';
 			$route['contact/send'] = 'frontend/ContactController/send_pesan';
 

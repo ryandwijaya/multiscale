@@ -9,6 +9,15 @@ class CrudModel extends CI_Model{
         $this->load->database();
     }
 
+    function view_data($table,$order){
+    	$this->db->order_by($order,'DESC');
+    	return $this->db->get($table)->result_array();
+	}
+
+    function view_data_by_id($id,$key,$table){
+    	$this->db->where($key,$id);
+    	return $this->db->get($table)->row_array();
+	}
 
     function insert($table,$data){
         return $this->db->insert($table,$data);

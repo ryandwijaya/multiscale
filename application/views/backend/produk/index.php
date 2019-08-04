@@ -27,11 +27,11 @@
                     <td><?=$no?></td>
                     <td><?=$value['produk_nama']?></td>
                     <td><?=$value['kategori_nama']?></td>
-                    <td><?=$value['produk_harga']?></td>
+                    <td>Rp. <?=nominal($value['produk_harga'])?></td>
                     <td class="text-center">
-                        <a href="#" class="btn btn-outline-info btn-sm" data-toggle="tooltip" data-html="true" title data-original-title="Lihat"><i class="fa fa-eye"></i></a>
-                        <a href="#" class="btn btn-outline-success btn-sm" data-toggle="tooltip" data-html="true" title data-original-title="Edit"><i class="fa fa-edit"></i></a>
-                        <a href="#" class="btn btn-outline-danger btn-sm" data-toggle="tooltip" data-html="true" title data-original-title="Hapus"><i class="fa fa-trash"></i></a>
+                        <a href="<?=base_url('admin/produk/lihat/'.$value['produk_id'])?>" class="btn btn-outline-info btn-sm" data-toggle="tooltip" data-html="true" title data-original-title="Lihat"><i class="fa fa-eye"></i></a>
+                        <a href="<?=base_url('admin/produk/update/'.$value['produk_id'])?>" class="btn btn-outline-success btn-sm" data-toggle="tooltip" data-html="true" title data-original-title="Edit"><i class="fa fa-edit"></i></a>
+                        <a href="<?=base_url('admin/produk/hapus/'.$value['produk_id'])?>" class="btn btn-outline-danger btn-sm" data-toggle="tooltip" data-html="true" title data-original-title="Hapus" onclick="return confirm('Apakah Anda Yakin Ingin Menghapus ?')"><i class="fa fa-trash"></i></a>
                     </td>
                 </tr>
 				<?php
