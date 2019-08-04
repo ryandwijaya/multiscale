@@ -18,7 +18,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   			//frontend
 			$route['contact'] = 'frontend/ContactController/index';
 			$route['contact/send'] = 'frontend/ContactController/send_pesan';
-			$route['product'] = 'frontend/ProductController/index';
+
+			//produk
+			$route['produk/(:any)'] = 'frontend/ProductController/produk/$1';
 
   	
   	//default

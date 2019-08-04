@@ -18,6 +18,16 @@ class ProdukModel extends CI_Model {
 		return $query->result_array();
 	}
 
+	public function lihat_produk_by_kategori($kategori){
+		$this->db->select('*');
+		$this->db->from('neraca_produk');
+		$this->db->join('neraca_kategori','neraca_kategori.kategori_id = neraca_produk.produk_kategori');
+		$this->db->where('neraca_produk.produk_kategori',$kategori);
+		$this->db->order_by('produk_date_created','DESC');
+		$query = $this->db->get();
+		return $query->result_array();
+	}
+
 	public function tambah_produk($data){
 		$this->db->insert('neraca_produk', $data);
 		return $this->db->affected_rows();
@@ -26,7 +36,8 @@ class ProdukModel extends CI_Model {
 	public function lihat_satu_produk($id){
 		$this->db->select('*');
 		$this->db->from('neraca_produk');
-		$this->db->where('produk_id',$id);
+		$this->db->join('neraca_kategori','neraca_kategori.kategori_id = neraca_produk.produk_kategori');
+		$this->db->where('neraca_produk.produk_id',$id);
 		$query = $this->db->get();
 		return $query->row_array();
 	}
