@@ -89,9 +89,19 @@
 
                         <div class="tab-product-navigation">
                             <div class="nav nav-tabs justify-content-center" id="nav-tab2" role="tablist">
-                                <a class="nav-item nav-link active" id="product-tab-1" data-toggle="tab" href="#product-series-1" role="tab" aria-selected="true">Decoration</a>
-                                <a class="nav-item nav-link" id="product-tab-2" data-toggle="tab" href="#product-series-2" role="tab" aria-selected="false">Lighting</a>
-                                <a class="nav-item nav-link" id="product-tab-3" data-toggle="tab" href="#product-series-3" role="tab" aria-selected="false">Storage</a>
+                                <?php
+                                $no = 1;
+                                 foreach ($kategori as $key => $value): ?>
+                                    
+                                    
+                                <a class="nav-item nav-link <?php if ($key==0): ?>
+                                active
+                            <?php endif ?>" id="product-tab-'<?= $no ?>'" data-toggle="tab" href="#<?= str_replace(' ','-',$value['kategori_nama']) ?>" role="tab" aria-selected="true"><?= $value['kategori_nama'] ?></a>
+                                
+                                <?php 
+                                $no++;
+                                endforeach ?>
+                                
                                 
                             </div>
                         </div>
@@ -100,7 +110,15 @@
 
                         <!--=======  tab product content  =======-->
                         <div class="tab-content">
-                            <div class="tab-pane fade show active" id="product-series-1" role="tabpanel" aria-labelledby="product-tab-1">
+
+                            <?php 
+                            $noo = 1;
+                            foreach ($kategori as $index => $va): ?>
+                                
+                            
+                            <div class="tab-pane fade show <?php if ($index==0): ?>
+                                active
+                            <?php endif ?>" id="<?= str_replace(' ','-',$va['kategori_nama']) ?>" role="tabpanel" aria-labelledby="product-tab-'<?= $noo ?>'">
                                 <!--=======  single row slider wrapper  =======-->
                                 <div class="single-row-slider-wrapper">
                                     <div class="ht-slick-slider" data-slick-setting='{
@@ -121,171 +139,51 @@
                                     {"breakpoint":575, "settings": {"slidesToShow": 2, "arrows": false} },
                                     {"breakpoint":479, "settings": {"slidesToShow": 1, "arrows": false} }
                                 ]'>
-
-                                    <?php for ($i = 0; $i <6 ; $i++) { ?>
                                         
-                                    
+
+                                    <?php 
+                                        $list_produk = $this->ProdukModel->lihat_produk_by_kategori($va['kategori_id']);
+                                     ?>
+
+
+                                    <?php foreach ($list_produk as $val): ?>
+                                        
+                                        
                                         <div class="col">
                                             <!--=======  single grid product  =======-->
                                             <div class="single-grid-product">
                                                 <div class="single-grid-product__image">
 
-                                                    <a href="<?= base_url() ?>product">
-                                                        <img src="<?= base_url() ?>assets/frontend/img/product-neraca/good.jpeg" class="img-fluid" alt="">
-                                                        <img src="<?= base_url() ?>assets/frontend/img/product-neraca/good.jpeg" class="img-fluid" alt="">
+                                                    <a href="<?= base_url() ?>produk/<?= $val['produk_id'] ?>">
+                                                        <img src="<?= base_url() ?>assets/upload/images/<?= $val['produk_foto'] ?>" class="img-fluid" alt="">
+                                                        <img src="<?= base_url() ?>assets/upload/images/<?= $val['produk_foto'] ?>" class="img-fluid" alt="">
                                                     </a>
 
                                                     
                                                 </div>
                                                 <div class="single-grid-product__content">
                                                     <div class="single-grid-product__category-rating">
-                                                        <span class="category"><a href="shop-left-sidebar.html">Timbangan</a></span>
-                                                        <span class="rating">
-                                                        <i class="ion-android-star active"></i>
-                                                        <i class="ion-android-star active"></i>
-                                                        <i class="ion-android-star active"></i>
-                                                        <i class="ion-android-star active"></i>
-                                                        <i class="ion-android-star-outline"></i>
-                                                    </span>
+                                                        <span class="category"><a href="<?= base_url() ?>produk/<?= $val['produk_id'] ?>"><?= $val['kategori_nama'] ?></a></span>
+                                                        <span class="rating"></span>
                                                     </div>
 
-                                                     <a href="<?= base_url() ?>product"><h5>Nama Product</h5></a>       
-                                                     <p class="single-grid-product__price">Lorem ipsum dolor sit amet,   consectetur adipisicing elit. Ad tenetur sed tempore eligendi architecto a. Est vel et quo fugiat hic veritatis amet atque rerum maiores! Optio, quas, vero. Impedit.</p>
+                                                     <a href="<?= base_url() ?>produk/<?= $val['produk_id'] ?>"><h5><?= $val['produk_nama'] ?></h5></a>       
+                                                     <p class="single-grid-product__price"><?= $val['produk_deskripsi'] ?></p>
                                                 </div>
                                             </div>
                                             <!--=======  End of single grid product  =======-->
                                         </div>
-                                    <?php } ?>
+                                    <?php endforeach ?>
                                         
 
                                     </div>
                                 </div>
                                 <!--=======  End of single row slider wrapper  =======-->
                             </div>
-                            <div class="tab-pane fade" id="product-series-2" role="tabpanel" aria-labelledby="product-tab-2">
-                                <!--=======  single row slider wrapper  =======-->
-                                <div class="single-row-slider-wrapper">
-                                    <div class="ht-slick-slider" data-slick-setting='{
-                                    "slidesToShow": 4,
-                                    "slidesToScroll": 1,
-                                    "arrows": true,
-                                    "autoplay": false,
-                                    "autoplaySpeed": 5000,
-                                    "speed": 1000,
-                                    "infinite": false,
-                                    "prevArrow": {"buttonClass": "slick-prev", "iconClass": "ion-chevron-left" },
-                                    "nextArrow": {"buttonClass": "slick-next", "iconClass": "ion-chevron-right" }
-                                }' data-slick-responsive='[
-                                    {"breakpoint":1501, "settings": {"slidesToShow": 4} },
-                                    {"breakpoint":1199, "settings": {"slidesToShow": 4, "arrows": false} },
-                                    {"breakpoint":991, "settings": {"slidesToShow": 3, "arrows": false} },
-                                    {"breakpoint":767, "settings": {"slidesToShow": 2, "arrows": false} },
-                                    {"breakpoint":575, "settings": {"slidesToShow": 2, "arrows": false} },
-                                    {"breakpoint":479, "settings": {"slidesToShow": 1, "arrows": false} }
-                                ]'>
-
-                                        <?php for ($i = 0; $i < 5 ; $i++) { ?>
-                                            
-                                        
-                                        <div class="col">
-                                            <!--=======  single grid product  =======-->
-                                            <div class="single-grid-product">
-                                                <div class="single-grid-product__image">
-                                                    
-                                                    <a href="<?= base_url() ?>product">
-                                                        <img src="<?= base_url() ?>assets/frontend/img/product-neraca/tim-mikro.jpeg" class="img-fluid" alt="">
-                                                       <img src="<?= base_url() ?>assets/frontend/img/product-neraca/tim-mikro.jpeg" class="img-fluid" alt="">
-                                                    </a>
-
-                                                    
-                                                </div>
-                                                <div class="single-grid-product__content">
-                                                    <div class="single-grid-product__category-rating">
-                                                        <span class="category"><a href="shop-left-sidebar.html">Vase</a></span>
-                                                        <span class="rating">
-                                                        <i class="ion-android-star active"></i>
-                                                        <i class="ion-android-star active"></i>
-                                                        <i class="ion-android-star active"></i>
-                                                        <i class="ion-android-star active"></i>
-                                                        <i class="ion-android-star-outline"></i>
-                                                    </span>
-                                                    </div>
-
-                                                     <a href="<?= base_url() ?>product"><h5>Nama Product</h5></a>
-                                                     <p class="single-grid-product__price">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque veritatis illo amet ipsa, mollitia, reprehenderit obcaecati tenetur repudiandae, dolor labore adipisci nemo reiciendis voluptate laudantium. Amet, dolorem officiis est eveniet.</p>
-                                                </div>
-                                            </div>
-                                            <!--=======  End of single grid product  =======-->
-                                        </div>
-                                        <?php } ?>
-                                        
-
-                                    </div>
-                                </div>
-                                <!--=======  End of single row slider wrapper  =======-->
-                            </div>
-                            <div class="tab-pane fade" id="product-series-3" role="tabpanel" aria-labelledby="product-tab-3">
-                                <!--=======  single row slider wrapper  =======-->
-                                <div class="single-row-slider-wrapper">
-                                    <div class="ht-slick-slider" data-slick-setting='{
-                                    "slidesToShow": 4,
-                                    "slidesToScroll": 1,
-                                    "arrows": true,
-                                    "autoplay": false,
-                                    "autoplaySpeed": 5000,
-                                    "speed": 1000,
-                                    "infinite": false,
-                                    "prevArrow": {"buttonClass": "slick-prev", "iconClass": "ion-chevron-left" },
-                                    "nextArrow": {"buttonClass": "slick-next", "iconClass": "ion-chevron-right" }
-                                }' data-slick-responsive='[
-                                    {"breakpoint":1501, "settings": {"slidesToShow": 4} },
-                                    {"breakpoint":1199, "settings": {"slidesToShow": 4, "arrows": false} },
-                                    {"breakpoint":991, "settings": {"slidesToShow": 3, "arrows": false} },
-                                    {"breakpoint":767, "settings": {"slidesToShow": 2, "arrows": false} },
-                                    {"breakpoint":575, "settings": {"slidesToShow": 2, "arrows": false} },
-                                    {"breakpoint":479, "settings": {"slidesToShow": 1, "arrows": false} }
-                                ]'>
-                                    <?php for ($i = 0; $i < 5 ; $i++) { ?>
-                                            
-                                        
-                                        <div class="col">
-                                            <!--=======  single grid product  =======-->
-                                            <div class="single-grid-product">
-                                                <div class="single-grid-product__image">
-                                                    
-                                                    <a href="<?= base_url() ?>product">
-                                                        <img src="<?= base_url() ?>assets/frontend/img/product-neraca/tim-mikro.jpeg" class="img-fluid" alt="">
-                                                       <img src="<?= base_url() ?>assets/frontend/img/product-neraca/tim-mikro.jpeg" class="img-fluid" alt="">
-                                                    </a>
-
-                                                    
-                                                </div>
-                                                <div class="single-grid-product__content">
-                                                    <div class="single-grid-product__category-rating">
-                                                        <span class="category"><a href="shop-left-sidebar.html">Vase</a></span>
-                                                        <span class="rating">
-                                                        <i class="ion-android-star active"></i>
-                                                        <i class="ion-android-star active"></i>
-                                                        <i class="ion-android-star active"></i>
-                                                        <i class="ion-android-star active"></i>
-                                                        <i class="ion-android-star-outline"></i>
-                                                    </span>
-                                                    </div>
-
-                                                     <a href="<?= base_url() ?>product"><h5>Nama Product</h5></a>
-                                                     <p class="single-grid-product__price">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque veritatis illo amet ipsa, mollitia, reprehenderit obcaecati tenetur repudiandae, dolor labore adipisci nemo reiciendis voluptate laudantium. Amet, dolorem officiis est eveniet.</p>
-                                                </div>
-                                            </div>
-                                            <!--=======  End of single grid product  =======-->
-                                        </div>
-                                        <?php } ?>
-                                        
-
-
-                                    </div>
-                                </div>
-                                <!--=======  End of single row slider wrapper  =======-->
-                            </div>
+                            <?php 
+                            $noo++;
+                            endforeach ?>
+    
                             
                         </div>
                         <!--=======  End of tab product content  =======-->
