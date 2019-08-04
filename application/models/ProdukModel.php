@@ -26,6 +26,7 @@ class ProdukModel extends CI_Model {
 	public function lihat_satu_produk($id){
 		$this->db->select('*');
 		$this->db->from('neraca_produk');
+		$this->db->join('neraca_kategori','neraca_kategori.kategori_id = neraca_produk.produk_kategori');
 		$this->db->where('produk_id',$id);
 		$query = $this->db->get();
 		return $query->row_array();

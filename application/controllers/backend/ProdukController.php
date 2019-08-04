@@ -8,7 +8,9 @@ class ProdukController extends CI_Controller
 	{
 		parent::__construct();
 		$model = array('KategoriModel','ProdukModel');
+		$helper = array('nominal');
 		$this->load->model($model);
+		$this->load->helper($helper);
 	}
 
 	public function index()
@@ -69,6 +71,81 @@ class ProdukController extends CI_Controller
 			);
 			$this->load->view('backend/templates/header', $data);
 			$this->load->view('backend/produk/tambah');
+			$this->load->view('backend/templates/footer');
+		}
+	}
+
+	public function lihat($id){
+		$data = array(
+			'title' => 'Lihat Data Produk | Neraca Multiscale',
+			'page_title' => 'Lihat Data Produk',
+			'icon_title' => 'fa-balance-scale',
+			'kategori' => $this->KategoriModel->lihat_kategori(),
+			'produk' => $this->ProdukModel->lihat_satu_produk($id)
+		);
+		$this->load->view('backend/templates/header', $data);
+		$this->load->view('backend/produk/lihat',$data);
+		$this->load->view('backend/templates/footer');
+	}
+
+	public function update($id){
+		if (isset($_POST['update'])){
+			$nama = $this->input->post('nama');
+			$kategori = $this->input->post('kategori');
+			$deskripsi = $this->input->post('deskripsi');
+			$harga = $this->input->post('harga');
+
+			$config['upload_path'] = './assets/upload/images/';
+			$config['allowed_types'] = 'jpg|png|jpeg';
+			$this->load->library('upload', $config);
+			$this->upload->initialize($config);
+
+			if (!$this->upload->do_upload('foto')) {
+				$data = array(
+					'produk_nama' => $nama,
+					'produk_kategori' => $kategori,
+					'produk_deskripsi' => $deskripsi,
+					'produk_harga' => $harga,
+				);
+
+				$update = $this->ProdukModel->update_produk($id,$data);
+				if ($update > 0){
+					$this->session->set_flashdata('alert', 'success_change');
+					redirect('admin/produk');
+				} else {
+					$this->session->set_flashdata('alert', 'fail_edit');
+					redirect('admin/produk');
+				}
+			} else {
+				$foto = $this->upload->data('file_name');
+
+				$data = array(
+					'produk_nama' => $nama,
+					'produk_kategori' => $kategori,
+					'produk_deskripsi' => $deskripsi,
+					'produk_harga' => $harga,
+					'produk_foto' => $foto
+				);
+
+				$update = $this->ProdukModel->update_produk($id,$data);
+				if ($update > 0){
+					$this->session->set_flashdata('alert', 'success_change');
+					redirect('admin/produk');
+				} else {
+					$this->session->set_flashdata('alert', 'fail_edit');
+					redirect('admin/produk');
+				}
+			}
+		} else {
+			$data = array(
+				'title' => 'Update Data Produk | Neraca Multiscale',
+				'page_title' => 'Update Data Produk',
+				'icon_title' => 'fa-balance-scale',
+				'kategori' => $this->KategoriModel->lihat_kategori(),
+				'produk' => $this->ProdukModel->lihat_satu_produk($id)
+			);
+			$this->load->view('backend/templates/header', $data);
+			$this->load->view('backend/produk/update',$data);
 			$this->load->view('backend/templates/footer');
 		}
 	}
