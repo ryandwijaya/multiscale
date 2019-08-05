@@ -18,7 +18,7 @@
                                                 <div class="product-details-big-image-slider-wrapper product-details-big-image-slider-wrapper--bottom-space ht-slick-slider" 
                                                 >
                                                     <div class="single-image text-center p-5">
-                                                        <img src="<?= base_url() ?>assets/upload/images/<?= $produk['produk_foto'] ?>" class="img-fluid" alt="" style="width: 80%; margin:0 auto;">
+                                                        <img src="<?= base_url() ?>assets/upload/images/produk/<?= $produk['produk_foto'] ?>" class="img-fluid" alt="" style="width: 80%; margin:0 auto;">
                                                     </div>
                                                     
                                                 </div>

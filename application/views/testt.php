@@ -29,19 +29,23 @@
                     ]'>
 
                             <!--=======  single slider item  =======-->
-                            <?php for ($i = 0; $i <5 ; $i++) { ?>  
+                           
+                           <?php 
+                           foreach ($banner as $key => $ban) { ?>
+                               
+                            
                                 
                             
                             <div class="single-slider-item">
-                                <div class="hero-slider-item-wrapper" style="background-image: url('assets/frontend/img/hero-slider/<?= $i ?>.jpg');">
+                                <div class="hero-slider-item-wrapper" style="background-image: url('assets/upload/images/banner/<?= $ban['banner_foto'] ?>');">
                                     <div class="container">
-                                        <div class="row">
+                                        <div class="row ">
                                             <div class="col-lg-12">
-                                                <div class="hero-slider-content hero-slider-content--left-space">
-                                                    <p class="slider-title slider-title--big-light">AMAZING PRODUCT!</p>
-                                                    <p class="slider-title slider-title--big-bold">WALL CLOCK</p>
-                                                    <p class="slider-title slider-title--small">Let your Wall reflect the luxurious side of you with our Unique Design 24ct.gold plated Wall Clock.</p>
-                                                    <a class="hero-slider-button" href="shop-left-sidebar.html"> <i class="ion-ios-plus-empty"></i> Lihat</a>
+                                                <div class="hero-slider-content hero-slider-content--left-space p-4" style="background-color: #343a4073!important;">
+                                                    <p class="slider-title slider-title--big-light text-light">Neraca Multiscale</p>
+                                                    <p class="slider-title slider-title--big-bold text-light"><?= $ban['banner_judul'] ?></p>
+                                                    <p class="slider-title slider-title--small text-light"><?= $ban['banner_deskripsi'] ?></p>
+                                                    <a class="hero-slider-button btn-light" href="shop-left-sidebar.html"> <i class="ion-ios-plus-empty"></i> Lihat</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -155,8 +159,8 @@
                                                 <div class="single-grid-product__image">
 
                                                     <a href="<?= base_url() ?>produk/<?= $val['produk_id'] ?>">
-                                                        <img src="<?= base_url() ?>assets/upload/images/<?= $val['produk_foto'] ?>" class="img-fluid" alt="">
-                                                        <img src="<?= base_url() ?>assets/upload/images/<?= $val['produk_foto'] ?>" class="img-fluid" alt="">
+                                                        <img src="<?= base_url() ?>assets/upload/images/produk/<?= $val['produk_foto'] ?>" class="img-fluid" alt="">
+                                                        <img src="<?= base_url() ?>assets/upload/images/produk/<?= $val['produk_foto'] ?>" class="img-fluid" alt="">
                                                     </a>
 
                                                     
