@@ -34,7 +34,7 @@ class ProdukController extends CI_Controller
 			$deskripsi = $this->input->post('deskripsi');
 			$harga = $this->input->post('harga');
 
-			$config['upload_path'] = './assets/upload/images/';
+			$config['upload_path'] = './assets/upload/images/produk/';
 			$config['allowed_types'] = 'jpg|png|jpeg';
 			$this->load->library('upload', $config);
 			$this->upload->initialize($config);
@@ -95,7 +95,7 @@ class ProdukController extends CI_Controller
 			$deskripsi = $this->input->post('deskripsi');
 			$harga = $this->input->post('harga');
 
-			$config['upload_path'] = './assets/upload/images/';
+			$config['upload_path'] = './assets/upload/images/produk/';
 			$config['allowed_types'] = 'jpg|png|jpeg';
 			$this->load->library('upload', $config);
 			$this->upload->initialize($config);
